@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="568.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="568.0" prefWidth="663.0">
+         <center>
+            <ImageView fx:id="SnapImage" fitHeight="416.0" fitWidth="573.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="569.0" spacing="140.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Button fx:id="btnStart" mnemonicParsing="false" onAction="#btnStartAction" prefHeight="35.0" prefWidth="119.0" text="Start" />
+                  <Button fx:id="btnStop" mnemonicParsing="false" onAction="#btnStopAction" prefHeight="32.0" prefWidth="136.0" text="Stop" />
+                  <Button fx:id="btnSnap" mnemonicParsing="false" onAction="#btnSnapAction" prefHeight="33.0" prefWidth="133.0" text="Snap" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
